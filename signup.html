@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Electra Prime</title>
+    <link rel="stylesheet" href="auth.css">
+    <script defer src="firebase-config.js"></script>
+    <script defer src="auth.js"></script>
+</head>
+<body>
+
+    <div class="auth-container">
+        <h2>Create Your Account</h2>
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button onclick="signup()">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        <p id="signupError" class="error"></p>
+    </div>
+
+</body>
+  </html>
