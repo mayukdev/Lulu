@@ -1,0 +1,165 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background Gradient */
+body {
+  background: linear-gradient(to bottom, #1DB954, #000);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Buttons */
+nav a {
+  text-decoration: none;
+}
+
+nav button {
+  padding: 12px 20px;
+  border: 2px solid #1DB954;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  margin-left: 12px;
+  font-size: 14px;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+nav button:hover {
+  background: #1DB954;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* CTA Button */
+.cta {
+  background: #1DB954;
+  color: black;
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.cta:hover {
+  background: #0f6a30;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: black;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+  display: block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  width: 180px;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background: #1DB954;
+  color: black;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  nav button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}
